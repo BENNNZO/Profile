@@ -1,0 +1,90 @@
+.wrapper-hero {
+    position: relative;
+    padding: 50px 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, black, var(--purple-dark));
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+        h1 {
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            height: 75px;
+            &::after {
+                content: 'FULL Stack Web Developer';
+                position: absolute;
+                left: 0;
+                top: 90%;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                opacity: 0.5;
+                // margin-left: 10px;
+            }
+        }
+        button {
+            margin-top: 20px;
+            position: relative;
+            background-image: linear-gradient(to bottom right, white 0%, black 80%);
+            padding: 2px;
+            transition: all 0.2s ease-out;
+            background-position: 50% 50%;
+            background-size: 200% 200%;
+            cursor: pointer;
+            &:hover {
+                background-position: 0% 0%;
+            }
+            p {
+                background: black;
+                color: white;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .blob, .blob-2 {
+        position: absolute;
+        background-color: var(--purple-light);
+        filter:  contrast(10) blur(150px);
+        transform: skewY(-10deg);
+    }
+    .blob {
+        top: 50%;
+        left: 35%;
+        width: 200px;
+        height: 50px;
+        opacity: 0.5;
+    }
+    .blob-2 {
+        top: 55%;
+        left: 25%;
+        opacity: 0.25;
+        width: 250px;
+        height: 100px;
+    }
+    .img-container {
+        position: relative;
+        height: 500px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 150px;
+        img {
+            position: absolute;
+            top: 53%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            background-image: linear-gradient(to bottom, transparent 50%, rgb(22, 4, 43));
+        }
+    }
+}

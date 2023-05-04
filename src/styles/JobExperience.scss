@@ -1,0 +1,57 @@
+.wrapper-job-experience {
+    position: relative;
+    background-image: linear-gradient(to top right, black, var(--purple-dark));
+    padding: 50px 200px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    .container {
+        width: 800px;
+        h2 {
+            font-size: 2rem;
+        }
+        .jobs {
+            margin-left: 50px;
+            .job {
+                position: relative;
+                display: grid;
+                grid-template-columns: 10px auto;
+                column-gap: 50px;
+                row-gap: 10px;
+                align-items: center;
+                margin-top: 50px;
+                .job-info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: end;
+                    gap: 20px;
+                    p {
+                        opacity: 0.5;
+                    }
+                }
+                .job-bullets {
+                    position: relative;
+                    padding-left: 20px;
+                    li {
+                        position: relative;
+                        transition: all 0.1s ease-out;
+                        padding: 1px 0 1px 20px;
+                        &::before {
+                            content: '-';
+                            position: absolute;
+                            left: 0;
+                            margin-right: 10px;
+                            transition: all 0.5s ease-out;
+                        }
+                        &:hover {
+                            transform: translateX(5px);
+                            &::before {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
