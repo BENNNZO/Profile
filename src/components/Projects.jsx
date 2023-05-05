@@ -26,7 +26,11 @@ export default function Projects() {
         },
         {
             title: 'Chat Room',
+<<<<<<< HEAD
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!',
+=======
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!'
+>>>>>>> 201a540f0317819d24a11824a64320e792e84aba
         }
     ]
 
