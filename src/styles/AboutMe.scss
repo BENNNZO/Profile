@@ -1,0 +1,23 @@
+.wrapper-about-me {
+    position: relative;
+    // background-image: linear-gradient(to top right, black, var(--purple-dark));
+    color: white;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container {
+        width: 800px;
+        h2 {
+            font-size: 2rem;
+        }
+        ul {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 750px;
+            margin-left: 50px;
+        }
+    }
+}

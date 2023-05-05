@@ -1,0 +1,12 @@
+.wrapper-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: end;
+    justify-content: center;
+    height: 75px;
+    img {
+        filter: invert(1);
+        height: 100%;
+    }
+}
