@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import JobExperience from './components/JobExperience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import ProjectsAccordion from './components/ProjectsAccordion';
 
 function App() {
     return (
@@ -16,7 +17,8 @@ function App() {
                 <AboutMe/>
                 <Skills/>
             </div>
-            <Projects />
+            <ProjectsAccordion />
+            {/* <Projects /> */}
             <JobExperience />
             <span style={{ height: '200vh', display: 'inline-block' }}/>
         </main>

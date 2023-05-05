@@ -84,7 +84,8 @@ html {
 .wrapper-job-experience::after,
 .wrapper-about-me::after,
 .wrapper-skills::after,
-.wrapper-projects::after {
+.wrapper-projects::after,
+.wrapper-projects-accordion::after {
     z-index: 1;
     content: '';
     position: absolute;

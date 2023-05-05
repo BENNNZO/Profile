@@ -1,0 +1,81 @@
+.wrapper-projects-accordion {
+    position: relative;
+    padding: 50px 100px;
+    color: white;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to bottom right, black, var(--purple-dark));
+    .container {
+        width: 800px;
+        h2 {
+            font-size: 2rem;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: 25px;
+            gap: 10px;
+            li {
+                position: relative;
+                // border: 1px solid white;
+                overflow: hidden;
+                background-image: linear-gradient(to bottom right, white, transparent);
+                background-size: 300% 300%;
+                background-position: 100% 100%;
+                padding: 1px;
+                transition: all 0.2s ease-out;
+                .border-control {
+                    background-color: black;
+                    .accordion-top {
+                        position: relative;
+                        padding: 15px 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                        img {
+                            height: 25px;
+                            transition: all 0.1s ease-out;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: calc(100% - 10px);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-image: linear-gradient(to right, transparent, white, transparent);
+                            height: 1px;
+                            width: 0%;
+                            transition: all 0.2s ease-out;
+                            transition-delay: 0.5s;
+                        }
+                    }
+                    .accordion-top-active::after {
+                        width: 100% !important;
+                        transition-delay: 0s !important;
+                    }
+                    .accordion-control {
+                        display: grid;
+                        grid-template-rows: 0fr;
+                        transition: all 0.5s ease-in-out;
+                        padding: 0 0px;
+                        div {
+                            overflow: hidden;
+                            p {
+                                padding: 10px 20px 20px 20px;
+                            }
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    background-position: 0% 0%;
+                }
+            }
+        }
+    }
+}

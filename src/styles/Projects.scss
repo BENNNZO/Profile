@@ -18,7 +18,7 @@
             margin-top: 25px;
             display: grid;
             // gap: 10px;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             transition: all 0.2s ease-out;
             li {
                 position: relative;
@@ -65,9 +65,9 @@
                     }
                 }
             }
-            // &:hover {
-            //     grid-template-columns: 1fr;
-            // }
+            &:hover {
+                grid-template-columns: 0fr 1fr;
+            }
         }
     }
 }
