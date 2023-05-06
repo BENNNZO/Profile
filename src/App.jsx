@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Blobs from './components/Blobs';
+
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
@@ -12,15 +14,17 @@ function App() {
     return (
         <main>
             <NavBar />
-            <Hero />
-            <div style={{ backgroundImage: 'linear-gradient(to top right, black, var(--purple-dark))' }}>
-                <AboutMe/>
-                <Skills/>
-            </div>
-            <ProjectsAccordion />
-            {/* <Projects /> */}
-            <JobExperience />
-            <span style={{ height: '200vh', display: 'inline-block' }}/>
+            <Blobs>
+                <Hero />
+                <div style={{ backgroundImage: 'linear-gradient(to top right, black, var(--purple-dark))' }}>
+                    <AboutMe/>
+                    <Skills/>
+                </div>
+                <ProjectsAccordion />
+                {/* <Projects /> */}
+                <JobExperience />
+                {/* <span style={{ height: '200vh', display: 'inline-block' }}/> */}
+            </Blobs>
         </main>
     )
 }

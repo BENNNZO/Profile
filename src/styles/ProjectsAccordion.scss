@@ -1,12 +1,10 @@
 .wrapper-projects-accordion {
     position: relative;
-    padding: 50px 100px;
     color: white;
     display: grid;
     place-items: center;
     background-image: linear-gradient(to bottom right, black, var(--purple-dark));
     .container {
-        width: 800px;
         h2 {
             font-size: 2rem;
         }
@@ -18,15 +16,16 @@
             gap: 10px;
             li {
                 position: relative;
-                // border: 1px solid white;
                 overflow: hidden;
                 background-image: linear-gradient(to bottom right, white, transparent);
-                background-size: 300% 300%;
+                background-size: 200% 200%;
                 background-position: 100% 100%;
                 padding: 1px;
                 transition: all 0.2s ease-out;
+                filter: drop-shadow(0 0 20px black);
                 .border-control {
-                    background-color: black;
+                    // background-color: rgba(0, 0, 0, 0.9);
+                    background-color: rgba(2, 0, 7, 0.95);
                     .accordion-top {
                         position: relative;
                         padding: 15px 20px;
@@ -37,7 +36,7 @@
                         cursor: pointer;
                         img {
                             height: 25px;
-                            transition: all 0.1s ease-out;
+                            transition: all 0.2s ease-in-out;
                         }
                         &::after {
                             content: '';
@@ -65,9 +64,11 @@
                             overflow: hidden;
                             p {
                                 padding: 10px 20px 20px 20px;
+                                transition: all 0.2s ease-out;
                             }
                             img {
                                 width: 100%;
+                                transition: all 0.5s ease-out;
                             }
                         }
                     }

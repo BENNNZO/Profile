@@ -1,6 +1,5 @@
 .wrapper-hero {
     position: relative;
-    padding: 50px 100px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -73,7 +72,7 @@
     }
     .img-container {
         position: relative;
-        height: 500px;
+        height: clamp(200px, 30vw, 500px);
         aspect-ratio: 1;
         border-radius: 100%;
         overflow: hidden;
@@ -85,6 +84,22 @@
             transform: translate(-50%, -50%);
             height: 100%;
             background-image: linear-gradient(to bottom, transparent 50%, rgb(22, 4, 43));
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .wrapper-hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        // background-image: linear-gradient(to bottom right, red, var(--purple-dark));
+        .img-container {
+            // height: 200px;
+            margin: 0px;
+        }
+        div {
         }
     }
 }

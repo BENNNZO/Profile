@@ -96,3 +96,33 @@ html {
     height: 1px;
     background-image: linear-gradient(to right, transparent, white, transparent);
 }
+
+.wrapper-hero,
+.wrapper-job-experience,
+.wrapper-about-me,
+.wrapper-skills,
+.wrapper-projects,
+.wrapper-projects-accordion {
+    padding: 50px 100px;
+    .container {
+        z-index: 1;
+        width: clamp(300px, 70vw, 800px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper-hero,
+    .wrapper-job-experience,
+    .wrapper-about-me,
+    .wrapper-skills,
+    .wrapper-projects,
+    .wrapper-projects-accordion {
+        padding: 50px 20px;
+        .container {
+            h2 {
+                text-align: center;
+            }
+            width: clamp(300px, 70vw, 800px);
+        }
+    }
+}

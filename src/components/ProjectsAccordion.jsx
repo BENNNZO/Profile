@@ -5,6 +5,7 @@ import '../styles/ProjectsAccordion.scss'
 import Arrow from '../assets/img/Projects/chevron-forward-outline.svg'
 import RiverOak from '../assets/img/Projects/RiverOak.png'
 import Profile from '../assets/img/Projects/Profile.png'
+import Hype from '../assets/img/Projects/Hype.png'
 
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
@@ -16,8 +17,8 @@ export default function ProjectsAccordion() {
         },
         {
             title: 'Discord Clone',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!',
-            src: Profile,
+            desc: 'A clone of discord with a working friend request system with provate messages and private servers that you can invite multiple friends to. ontop of all that it also has working live voice and video calls that you can have multiple friends join',
+            src: Hype,
             active: false
         },
         {
@@ -47,8 +48,12 @@ export default function ProjectsAccordion() {
     ])
     
     function handleAccordion(i) {
-        setProjects([...projects], projects.forEach(e => e.active = false))
-        setProjects([...projects], projects[i].active = !projects[i].active)
+        if (projects[i].active === true) {
+            setProjects([...projects], projects[i].active = !projects[i].active)
+        } else {
+            setProjects([...projects], projects.forEach(e => e.active = false))
+            setProjects([...projects], projects[i].active = !projects[i].active)
+        }
     }
 
     return (
@@ -66,8 +71,8 @@ export default function ProjectsAccordion() {
                                     </div>
                                     <div className='accordion-control' style={e.active ? { gridTemplateRows: '1fr' } : { gridTemplateRows: '0fr' }}>
                                         <div>
-                                            <img src={e.src} alt="project picture" />
-                                            <p>{e.desc}</p>
+                                            <img src={e.src} alt="project picture" style={e.active ? { opacity: '1' } : { opacity: '0' }}/>
+                                            <p style={e.active ? { opacity: '1' } : { opacity: '0' }}>{e.desc}</p>
                                         </div>
                                     </div>
                                 </div>

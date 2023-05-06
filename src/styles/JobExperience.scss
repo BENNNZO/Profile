@@ -1,12 +1,10 @@
 .wrapper-job-experience {
     position: relative;
     background-image: linear-gradient(to top right, black, var(--purple-dark));
-    padding: 50px 200px;
     color: white;
     display: grid;
     justify-content: center;
     .container {
-        width: 800px;
         h2 {
             font-size: 2rem;
         }

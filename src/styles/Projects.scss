@@ -5,10 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 100px;
     background-image: linear-gradient(to bottom right, black, var(--purple-dark));
     .container {
-        width: 800px;
         h2 {
             font-size: 2rem;
         }
@@ -65,9 +63,9 @@
                     }
                 }
             }
-            &:hover {
-                grid-template-columns: 0fr 1fr;
-            }
+            // &:hover {
+            //     grid-template-columns: 0fr 1fr;
+            // }
         }
     }
 }

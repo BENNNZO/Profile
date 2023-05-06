@@ -60,7 +60,6 @@ export default function Skills() {
                             <li key={i}>
                                 <img src={e.icon} alt="" />
                                 <p>{e.title}</p>
-                                {/* {e.icon} */}
                             </li>
                         )
                     })}

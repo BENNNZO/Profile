@@ -1,6 +1,5 @@
 .wrapper-skills {
     position: relative;
-    padding: 50px 100px;
     color: white;
     // background-image: linear-gradient(to right, black, var(--purple-dark));
     display: flex;
@@ -8,7 +7,6 @@
     justify-content: center;
     align-items: center;
     .container {
-        width: 800px;
         h2 {
             font-size: 2rem;
             margin-bottom: 25px;
@@ -53,6 +51,19 @@
                     p {
                         letter-spacing: 0px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper-skills {
+        .container {
+            ul {
+                flex-wrap: wrap;
+                li::after {
+                    opacity: 0;
                 }
             }
         }
