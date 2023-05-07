@@ -6,7 +6,7 @@ export default function Blobs({ children }) {
     function generateBlobs(amt) {
         let blobs = []
         for (let i = 0; i < amt; i++) {
-            blobs.push(<span className='blob' style={{ 
+            blobs.push(<span key={i} className='blob' style={{ 
                 width: `${Math.random() * 300 + 50}px`, 
                 height: `${Math.random() * 300 + 50}px`, 
                 top: `${Math.random() * 100}%`,

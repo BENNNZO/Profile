@@ -57,7 +57,7 @@ export default function ProjectsAccordion() {
     }
 
     return (
-        <section className='wrapper-projects-accordion'>
+        <section className='wrapper-projects-accordion' id='projects'>
             <div className="container">
                 <h2>PROJECTS I WORKED ON</h2>
                 <ul>

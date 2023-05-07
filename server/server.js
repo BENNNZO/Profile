@@ -12,10 +12,12 @@ app.use(cors({
     credentials: true
 }))
 app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 app.use(express.static('./public'))
 
 app.post('/email', async (req, res) => {
     let { first, last, email, phone, body } = req.body
+    console.log(req.body)
 
     const transport = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -36,7 +38,7 @@ app.post('/email', async (req, res) => {
                 <h1>Contact Info: </h1>
                 <h4>Name: ${first}, ${last}</h4>
                 <h4>Email: ${email}</h4>
-                ${phone !== undefined ? '<h4>Phone: ${phone}</h4>' : '<h4>No phone number</h4>'}
+                ${phone !== undefined ? `<h4>Phone: ${phone}</h4>` : '<h4>No phone number</h4>'}
             </div>
             <h2 style="padding: 10px 20px; border: 2px solid black; border-radius: 10px">
                 ${body}
