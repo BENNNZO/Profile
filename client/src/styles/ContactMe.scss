@@ -1,0 +1,74 @@
+.wrapper-contact-me {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, black, var(--purple-dark));
+    .container {
+        h2 {
+            font-size: 2rem;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+            padding: 50px;
+            border-radius: 25px;
+            .border-control {  
+                position: relative;   
+                padding: 1px;
+                background-image: linear-gradient(to bottom right, white, transparent);
+                background-size: 150% 150%;
+                background-position: 100% 100%;
+                transition: all 0.2s ease-out;
+                &:hover {
+                    background-position: 0% 0%;
+                }
+            }
+            input, button, textarea {
+                position: relative;
+                padding: 8px 12px;
+                border: none;
+                font-size: 1rem;
+                background-color: rgba(2, 0, 7, 0.95);
+                width: 100%;
+                // background-image: linear-gradient(to bottom right, white, transparent);
+                // line-height: 1rem;
+                // height: 32px;
+                color: white;
+                transition: all 0.2s ease-out;
+            }
+            textarea {
+                resize: none;
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .button {
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            button {
+                cursor: pointer;
+            }
+            input:focus, textarea:focus {
+                background-color: rgba(2, 0, 7, 0.8);
+                outline: none;
+            }
+            label {
+                position: relative;
+            }
+            .required::after {
+                content: '*';
+                position: absolute;
+                top: -3px;
+                color: salmon;
+                padding-left: 5px;
+            }
+            .full {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+}

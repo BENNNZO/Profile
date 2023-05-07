@@ -30,7 +30,10 @@ h6,
 p,
 a,
 li,
-button {
+button,
+label,
+input,
+textarea {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -102,7 +105,8 @@ html {
 .wrapper-about-me,
 .wrapper-skills,
 .wrapper-projects,
-.wrapper-projects-accordion {
+.wrapper-projects-accordion,
+.wrapper-contact-me {
     padding: 50px 100px;
     .container {
         z-index: 1;
@@ -116,7 +120,8 @@ html {
     .wrapper-about-me,
     .wrapper-skills,
     .wrapper-projects,
-    .wrapper-projects-accordion {
+    .wrapper-projects-accordion,
+    .wrapper-contact-me {
         padding: 50px 20px;
         .container {
             h2 {

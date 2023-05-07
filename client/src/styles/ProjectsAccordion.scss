@@ -34,6 +34,7 @@
                         justify-content: space-between;
                         align-items: center;
                         cursor: pointer;
+                        transition: all 0.2s ease-out;
                         img {
                             height: 25px;
                             transition: all 0.2s ease-in-out;
@@ -75,6 +76,9 @@
                 }
                 &:hover {
                     background-position: 0% 0%;
+                    .accordion-top {
+                        padding: 15px 25px;
+                    }
                 }
             }
         }

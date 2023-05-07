@@ -1,7 +1,7 @@
 import React from 'react';
 
+import ContactMe from './components/ContactMe';
 import Blobs from './components/Blobs';
-
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
@@ -23,6 +23,7 @@ function App() {
                 <ProjectsAccordion />
                 {/* <Projects /> */}
                 <JobExperience />
+                <ContactMe />
                 {/* <span style={{ height: '200vh', display: 'inline-block' }}/> */}
             </Blobs>
         </main>

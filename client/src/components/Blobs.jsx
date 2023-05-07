@@ -17,7 +17,7 @@ export default function Blobs({ children }) {
     }
 
     return (
-        <section className='wrapper-blobs'>
+        <section className='wrapper-blobs' style={{ overflow: 'hidden' }}>
             {children}
             {generateBlobs(10)}
         </section>
