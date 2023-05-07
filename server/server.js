@@ -22,13 +22,13 @@ app.post('/email', async (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: "testing.bennnzo@gmail.com",
-            pass: "dahrpwaufajfrxdn"
+            user: process.env.EMAIL,
+            pass: process.env.STMP
         }
     })
 
     const mailOptions = {
-        from: 'testing.bennnzo@gmail.com',
+        from: process.env.EMAIL,
         to: 'benjamin.phillips.webdev@gmail.com',
         subject: "⚠️ Profile Contact",
         html: `
