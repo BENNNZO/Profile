@@ -1,6 +1,5 @@
 .wrapper-about-me {
     position: relative;
-    // background-image: linear-gradient(to top right, black, var(--purple-dark));
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,8 +13,10 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            // width: 750px;
             margin-left: 50px;
+            @media screen and (max-width: 900px) {
+                margin-left: 0;
+            }
         }
     }
 }

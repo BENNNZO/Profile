@@ -34,4 +34,10 @@ nav {
             }
         }
     }
+    @media screen and (max-width: 537px) {
+        justify-content: center;
+        img {
+            display: none;
+        }
+    }
 }

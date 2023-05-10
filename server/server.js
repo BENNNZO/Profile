@@ -25,7 +25,7 @@ app.post('/email', async (req, res) => {
         secure: false,
         auth: {
             user: process.env.EMAIL,
-            pass: process.env.STMP
+            pass: process.env.STMP,
         }
     })
 

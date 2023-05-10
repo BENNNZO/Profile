@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import Logo from './Logo';
-import Profile from '../assets/img/about/profile.png'
+// import Profile from '../assets/img/about/profile.png'
+import Profile from '../assets/img/about/profile-compressed.png'
 
 import '../styles/Hero.scss'
 

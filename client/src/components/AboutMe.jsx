@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Profile from '../assets/img/about/profile.png'
-
 import '../styles/AboutMe.scss'
 
 export default function AboutMe() {

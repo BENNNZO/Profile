@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import '../styles/ProjectsAccordion.scss'
 
 import Arrow from '../assets/img/Projects/chevron-forward-outline.svg'
-import RiverOak from '../assets/img/Projects/RiverOak.png'
-import Profile from '../assets/img/Projects/Profile.png'
-import Hype from '../assets/img/Projects/Hype.png'
+import RiverOak from '../assets/img/Projects/RiverOak.webp'
+import Profile from '../assets/img/Projects/Profile.webp'
+import Hype from '../assets/img/Projects/Hype.webp'
 
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
@@ -69,10 +69,25 @@ export default function ProjectsAccordion() {
                                         <p>{e.title}</p>
                                         <img src={Arrow} alt="open accordion" style={e.active ? { transform: 'rotate(90deg)' } : { transform: 'rotate(0deg)' }} />
                                     </div>
-                                    <div className='accordion-control' style={e.active ? { gridTemplateRows: '1fr' } : { gridTemplateRows: '0fr' }}>
+                                    <div 
+                                        className='accordion-control' 
+                                        style={
+                                            e.active ? { gridTemplateRows: '1fr' } : { gridTemplateRows: '0fr' }
+                                        }
+                                    >
                                         <div>
-                                            <img src={e.src} alt="project picture" style={e.active ? { opacity: '1' } : { opacity: '0' }}/>
-                                            <p style={e.active ? { opacity: '1' } : { opacity: '0' }}>{e.desc}</p>
+                                            <img 
+                                                src={e.src} alt="project picture" 
+                                                style={
+                                                    e.active ? { opacity: '1' } : { opacity: '0' }
+                                                }/>
+                                            <p 
+                                                style={
+                                                    e.active ? { opacity: '1' } : { opacity: '0' }
+                                                }
+                                            >
+                                                {e.desc}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

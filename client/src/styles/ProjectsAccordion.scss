@@ -22,6 +22,9 @@
                 background-position: 100% 100%;
                 padding: 1px;
                 transition: all 0.2s ease-out;
+                @media screen and (max-width: 768px) {
+                    transition: none;
+                }
                 filter: drop-shadow(0 0 20px black);
                 .border-control {
                     // background-color: rgba(0, 0, 0, 0.9);
@@ -35,9 +38,15 @@
                         align-items: center;
                         cursor: pointer;
                         transition: all 0.2s ease-out;
+                        @media screen and (max-width: 768px) {
+                            transition: none;
+                        }
                         img {
                             height: 25px;
                             transition: all 0.2s ease-in-out;
+                            @media screen and (max-width: 768px) {
+                                transition: none;
+                            }
                         }
                         &::after {
                             content: '';
@@ -50,6 +59,9 @@
                             width: 0%;
                             transition: all 0.2s ease-out;
                             transition-delay: 0.5s;
+                            @media screen and (max-width: 768px) {
+                                transition: none;
+                            }
                         }
                     }
                     .accordion-top-active::after {
@@ -60,16 +72,25 @@
                         display: grid;
                         grid-template-rows: 0fr;
                         transition: all 0.5s ease-in-out;
+                        @media screen and (max-width: 768px) {
+                            transition: none;
+                        }
                         padding: 0 0px;
                         div {
                             overflow: hidden;
                             p {
                                 padding: 10px 20px 20px 20px;
                                 transition: all 0.2s ease-out;
+                                @media screen and (max-width: 768px) {
+                                    transition: none;
+                                }
                             }
                             img {
                                 width: 100%;
                                 transition: all 0.5s ease-out;
+                                @media screen and (max-width: 768px) {
+                                    transition: none;
+                                }
                             }
                         }
                     }
@@ -78,8 +99,14 @@
                     background-position: 0% 0%;
                     .accordion-top {
                         padding: 15px 25px;
+                        @media screen and (max-width: 768px) {
+                            padding: 15px 20px;
+                        }
                     }
                 }
+            }
+            @media screen and (max-width: 900px) {
+                margin-left: 0;
             }
         }
     }
