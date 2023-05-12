@@ -2,10 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import Logo from './Logo';
-// import Profile from '../assets/img/about/profile.png'
-import Profile from '../assets/img/about/profile-compressed.png'
-// import Background from '../assets/svg/hero.svg'
-import Background from '../assets/img/hero/render.png'
+import Profile from '../assets/img/about/profile-of-me.png'
 
 import '../styles/Hero.scss'
 
@@ -14,7 +11,6 @@ export default function Hero() {
         <section className='wrapper-hero'>
             <span className="blob" />
             <span className="blob-2" />
-            <img src={Background} alt="background lines" className='hero-background'/>
             <div>
                 <Logo />
                 <motion.h1
@@ -28,7 +24,9 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0, transition: { delay: 0.2, duration: 0.2 }}}
                 >
                     <button>
-                        <p>Contact Me</p>
+                        <a href="#contact-me">
+                            <p>Contact Me</p>
+                        </a>
                     </button>
                 </motion.div>
             </div>

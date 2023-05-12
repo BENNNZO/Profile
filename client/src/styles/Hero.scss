@@ -96,7 +96,10 @@
         position: relative;
         height: clamp(200px, 30vw, 450px);
         aspect-ratio: 1;
-        margin-right: 150px;
+        margin-right: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+        filter: drop-shadow(0 0 25px black);
         img {
             position: absolute;
             top: 53%;

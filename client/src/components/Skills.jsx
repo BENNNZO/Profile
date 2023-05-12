@@ -17,6 +17,8 @@ import JS from '../assets/img/skills/logo-javascript.svg'
 import NodeJS from '../assets/img/skills/logo-nodejs.svg'
 import ReactJS from '../assets/img/skills/logo-react.svg'
 import SASS from '../assets/img/skills/logo-sass.svg'
+import NextJs from '../assets/img/skills/logo-nextjs.svg'
+import Tailwind from '../assets/img/skills/logo-tailwind.svg'
 
 export default function Skills() {
     const skills = [
@@ -47,6 +49,14 @@ export default function Skills() {
         {
             title: 'SASS',
             icon: SASS
+        },
+        {
+            title: 'Next.js',
+            icon: NextJs
+        },
+        {
+            title: 'Tailwind',
+            icon: Tailwind
         }
     ]
 

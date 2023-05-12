@@ -30,7 +30,7 @@
                 img {
                     width: 100px;
                     padding: 5px;
-                    filter: invert(1);
+                    filter: invert(1) drop-shadow(0 0 20px black);
                     transition: all 0.2s ease-out;
                 }
                 &:not(:last-child)::after {

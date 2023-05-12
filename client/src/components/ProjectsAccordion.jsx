@@ -6,9 +6,17 @@ import Arrow from '../assets/img/Projects/chevron-forward-outline.svg'
 import RiverOak from '../assets/img/Projects/RiverOak.webp'
 import Profile from '../assets/img/Projects/Profile.webp'
 import Hype from '../assets/img/Projects/Hype.webp'
+import NSP from '../assets/img/Projects/NSP-Sports.png'
+import AI from '../assets/img/Projects/promptopia.png'
 
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
+        {
+            title: 'AI-Prompts (Promptopia)',
+            desc: 'This is a NextJs CRUD application that allows users to create, read, update, and delete posts.  Is also has a feature allowing users to search for a prompt and view another users profile.',
+            src: AI,
+            active: false
+        },
         {
             title: 'River Oak Properties LLC.',
             desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally',
@@ -29,22 +37,10 @@ export default function ProjectsAccordion() {
         },
         {
             title: 'World Cup Dashboard',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!',
-            src: '#',
+            desc: 'This is a dashboard that allows users to see stats revolving the worldcup of 2022',
+            src: NSP,
             active: false
-        },
-        {
-            title: 'Password Generator',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!',
-            src: '#',
-            active: false
-        },
-        {
-            title: 'Chat Room',
-            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!',
-            src: '#',
-            active: false
-        },
+        }
     ])
     
     function handleAccordion(i) {
