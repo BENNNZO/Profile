@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import BackgroundImage from './assets/img/hero/render_7.jpg'
 
@@ -11,17 +11,25 @@ import Skills from './components/Skills';
 import ProjectsAccordion from './components/ProjectsAccordion';
 
 function App() {
+    const mainRef = useRef(0)
+
     const [height, setHeight] = useState(0)
     useEffect(() => {
-        setHeight(document.body.clientHeight)
-    }, [document.body.clientHeight])
+        console.log(mainRef)
+        setTimeout(() => {
+            setHeight(mainRef.current.clientHeight)
+        }, 100);
+    }, [mainRef])
 
     return (
-        <main>
+        <main 
+            ref={mainRef}
+            style={{ overflow: "hidden" }}
+        >
             <div
                 className='background-image-container'
                 style={{ 
-                    height: `${height + 100}px`
+                    height: `${height}px`
                 }}
             >
                 <img 

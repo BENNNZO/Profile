@@ -8,9 +8,23 @@ import Profile from '../assets/img/Projects/Profile.webp'
 import Hype from '../assets/img/Projects/Hype.webp'
 import NSP from '../assets/img/Projects/NSP-Sports.png'
 import AI from '../assets/img/Projects/promptopia.png'
+import Activist from '../assets/img/Projects/activist.png'
+import FunThings from '../assets/img/Projects/fun-things.png'
 
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
+        {
+            title: 'Activist (Daily Data Tracker)',
+            desc: 'This is a personal project of mine where you fill out a daily form and over time your are able to see the trends in your mood, energy, sleep time, etc. This website also uses nextAuth for Google SSO and a mongo db to save the user credentials if the user decides not to use Google SSO.',
+            src: Activist,
+            active: false
+        },
+        {
+            title: 'Fun Things',
+            desc: 'This is a website i made to catalog all the random things that i make on my free time. You should check it out!',
+            src: FunThings,
+            active: false
+        },
         {
             title: 'AI-Prompts (Promptopia)',
             desc: 'This is a NextJs CRUD application that allows users to create, read, update, and delete posts.  Is also has a feature allowing users to search for a prompt and view another users profile.',
