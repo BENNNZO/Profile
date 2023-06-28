@@ -59,6 +59,7 @@ button {
 
 html {
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -81,18 +82,20 @@ html {
     background-color: white;
 }
 .background-image-container {
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     z-index: 1;
-    overflow: hidden;
+    // overflow: hidden;
     position: absolute;
     .background-image {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        height: 100%;
+        // height: 100%;
         // object-fit: fill;
-        object-fit: cover;
+        // object-fit: cover;
+        width: 1920px;
     }
 }
 
