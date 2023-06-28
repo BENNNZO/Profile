@@ -32,7 +32,10 @@ export default function ContactMe() {
             body: bodyRef.current.value
         })
         .then(() => setSent(true))
-        .catch(() => setErr(true))
+        .catch((err) => {
+            setErr(true)
+            console.log(err)
+        })
     }
 
     return (
