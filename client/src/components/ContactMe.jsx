@@ -24,7 +24,7 @@ export default function ContactMe() {
         console.log([firstRef.current.value, lastRef.current.value])
         console.log([emailRef.current.value, phoneRef.current.value])
         console.log(bodyRef.current.value)
-        axios.post(`${window.location.href}email`, {
+        axios.post(`${window.location.href}/email`, {
             first: firstRef.current.value,
             last: lastRef.current.value,
             email: emailRef.current.value,
