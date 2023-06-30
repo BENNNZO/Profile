@@ -10,50 +10,73 @@ import NSP from '../assets/img/Projects/NSP-Sports.png'
 import AI from '../assets/img/Projects/promptopia.png'
 import Activist from '../assets/img/Projects/activist.png'
 import FunThings from '../assets/img/Projects/fun-things.png'
+import Snippity from '../assets/img/Projects/Snippity.png'
+import Idle from '../assets/img/Projects/Idle.png'
 
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
         {
+            title: 'Snippity',
+            desc: "This is my prized possession.  It's a website where you can share your own code snippets to the world. Still needs a couple minor bug fixes but ultimately this is my best work as far as interactivity and user friendliness.",
+            src: Snippity,
+            active: false,
+            link: "https://snippity.dev/"
+        },
+        {
+            title: 'Pizza Idle Game',
+            desc: 'This is a personal project of mine where you fill out a daily form and over time your are able to see the trends in your mood, energy, sleep time, etc. This website also uses nextAuth for Google SSO and a mongo db to save the user credentials if the user decides not to use Google SSO.',
+            src: Idle,
+            active: false,
+            link: "https://idle-game-bennnzo.vercel.app/"
+        },
+        {
             title: 'Activist (Daily Data Tracker)',
             desc: 'This is a personal project of mine where you fill out a daily form and over time your are able to see the trends in your mood, energy, sleep time, etc. This website also uses nextAuth for Google SSO and a mongo db to save the user credentials if the user decides not to use Google SSO.',
             src: Activist,
-            active: false
+            active: false,
+            link: "https://activist-desktop-bennnzo.vercel.app/"
         },
         {
             title: 'Fun Things',
             desc: 'This is a website i made to catalog all the random things that i make on my free time. You should check it out!',
             src: FunThings,
-            active: false
+            active: false,
+            link: "https://fun-things-git-main-bennnzo.vercel.app/"
         },
         {
             title: 'AI-Prompts (Promptopia)',
             desc: 'This is a NextJs CRUD application that allows users to create, read, update, and delete posts.  Is also has a feature allowing users to search for a prompt and view another users profile.',
             src: AI,
-            active: false
+            active: false,
+            link: "#not-deployed-anymore"
         },
         {
             title: 'River Oak Properties LLC.',
             desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally',
             src: RiverOak,
-            active: false
+            active: false,
+            link: "#not-deployed-anymore"
         },
         {
             title: 'Discord Clone',
             desc: 'A clone of discord with a working friend request system with provate messages and private servers that you can invite multiple friends to. ontop of all that it also has working live voice and video calls that you can have multiple friends join',
             src: Hype,
-            active: false
+            active: false,
+            link: "#not-deployed-anymore"
         },
         {
             title: 'Old Profile',
             desc: 'This is my old profile I thought i would put this here as a way to show how I have progressed as a Web Developer.',
             src: Profile,
-            active: false
+            active: false,
+            link: "#not-deployed-anymore"
         },
         {
             title: 'World Cup Dashboard',
             desc: 'This is a dashboard that allows users to see stats revolving the worldcup of 2022',
             src: NSP,
-            active: false
+            active: false,
+            link: "#not-deployed-anymore"
         }
     ])
     
