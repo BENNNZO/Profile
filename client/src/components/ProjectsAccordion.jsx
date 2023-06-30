@@ -13,6 +13,8 @@ import FunThings from '../assets/img/Projects/fun-things.png'
 import Snippity from '../assets/img/Projects/Snippity.png'
 import Idle from '../assets/img/Projects/Idle.png'
 
+import OpenLink from '../assets/svg/open-link.svg'
+
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
         {
@@ -108,12 +110,36 @@ export default function ProjectsAccordion() {
                                             e.active ? { gridTemplateRows: '1fr' } : { gridTemplateRows: '0fr' }
                                         }
                                     >
-                                        <div>
+                                        <div style={{ position: "relative" }}>
+                                            <div style={{ 
+                                                padding: "8px", 
+                                                backgroundColor: "rgba(0, 0, 0, 0.5)", 
+                                                position: "absolute",
+                                                top: "10px",
+                                                right: "10px",
+                                                borderRadius: "10px",
+                                                pointerEvents: "none",
+                                                display: "grid",
+                                                placeItems: "center"
+                                            }}>
+                                                <img 
+                                                    src={OpenLink} 
+                                                    alt="open link"
+                                                    style={{
+                                                        height: "25px",
+                                                        aspectRatio: "1",
+                                                        filter: "invert(1)"
+                                                    }}
+                                                />
+                                            </div>
+                                            {/* <OpenLink /> */}
                                             <img 
                                                 src={e.src} alt="project picture" 
                                                 style={
-                                                    e.active ? { opacity: '1' } : { opacity: '0' }
-                                                }/>
+                                                    e.active ? { opacity: '1', cursor: "pointer" } : { opacity: '0', cursor: "pointer" }
+                                                }
+                                                onClick={()=> window.open(e.link, "_blank")}
+                                            />
                                             <p 
                                                 style={
                                                     e.active ? { opacity: '1' } : { opacity: '0' }
