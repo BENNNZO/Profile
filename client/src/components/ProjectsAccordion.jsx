@@ -24,7 +24,7 @@ export default function ProjectsAccordion() {
         },
         {
             title: 'Pizza Idle Game',
-            desc: 'This is a personal project of mine where you fill out a daily form and over time your are able to see the trends in your mood, energy, sleep time, etc. This website also uses nextAuth for Google SSO and a mongo db to save the user credentials if the user decides not to use Google SSO.',
+            desc: 'I made an idle game because as a kid Cookie Clicker was always one of if not my favorite game to play.  It is not fully finished but the way I created the game it will be really easy to add more upgrades and workers.  The only problem is I have to do the art and I can be a bit of a perfectionist when it comes to personal projects.',
             src: Idle,
             active: false,
             link: "https://idle-game-bennnzo.vercel.app/"
