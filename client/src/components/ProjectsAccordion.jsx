@@ -127,7 +127,7 @@ export default function ProjectsAccordion() {
                                                     alt="open link"
                                                     style={{
                                                         height: "25px",
-                                                        aspectRatio: "1",
+                                                        aspectRatio: "1 1",
                                                         filter: "invert(1)"
                                                     }}
                                                 />
