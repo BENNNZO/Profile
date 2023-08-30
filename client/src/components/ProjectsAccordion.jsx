@@ -18,6 +18,13 @@ import OpenLink from '../assets/svg/open-link.svg'
 export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
         {
+            title: 'River Oak Properties LLC.',
+            desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally.',
+            src: RiverOak,
+            active: false,
+            link: "#not-deployed-anymore"
+        },
+        {
             title: 'Snippity',
             desc: "This is my prized possession.  It's a website where you can share your own code snippets to the world. Still needs a couple minor bug fixes but ultimately this is my best work as far as interactivity and user friendliness.",
             src: Snippity,
@@ -49,13 +56,6 @@ export default function ProjectsAccordion() {
             title: 'AI-Prompts (Promptopia)',
             desc: 'This is a NextJs CRUD application that allows users to create, read, update, and delete posts.  Is also has a feature allowing users to search for a prompt and view another users profile.',
             src: AI,
-            active: false,
-            link: "#not-deployed-anymore"
-        },
-        {
-            title: 'River Oak Properties LLC.',
-            desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally.',
-            src: RiverOak,
             active: false,
             link: "#not-deployed-anymore"
         },
