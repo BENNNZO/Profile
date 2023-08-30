@@ -22,7 +22,7 @@ export default function ProjectsAccordion() {
             desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally.',
             src: RiverOak,
             active: false,
-            link: "#not-deployed-anymore"
+            link: "https://river-oak-properties.herokuapp.com"
         },
         {
             title: 'Snippity',
