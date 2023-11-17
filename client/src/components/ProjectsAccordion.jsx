@@ -12,6 +12,7 @@ import Activist from '../assets/img/Projects/activist.png'
 import FunThings from '../assets/img/Projects/fun-things.png'
 import Snippity from '../assets/img/Projects/Snippity.png'
 import Idle from '../assets/img/Projects/Idle.png'
+import RealLifeBarbering from '../assets/img/Projects/real-life-barbering.png'
 
 import OpenLink from '../assets/svg/open-link.svg'
 
@@ -19,10 +20,17 @@ export default function ProjectsAccordion() {
     const [projects, setProjects] = useState([
         {
             title: 'River Oak Properties LLC.',
-            desc: '(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally.',
+            desc: '(Official website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally.',
             src: RiverOak,
             active: false,
             link: "https://river-oak-properties.herokuapp.com"
+        },
+        {
+            title: 'Real Life Barbering',
+            desc: '(Official website not deployed yet) Real Life Barbering is a local barbering shop I made a website for.  It includes a secret admin page / login that allows the admins to add, remove, and edit products on the product page.',
+            src: RealLifeBarbering,
+            active: false,
+            link: "https://real-life-barbering-official.vercel.app"
         },
         {
             title: 'Snippity',
